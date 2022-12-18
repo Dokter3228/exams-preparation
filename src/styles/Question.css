@@ -1,0 +1,25 @@
+.question-container {
+  background-color: #2a272a;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.title {
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.answer-img {
+  width: 100%;
+}
+
+.btn {
+  background-color: #82a0aa;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 5px;
+}
