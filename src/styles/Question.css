@@ -2,15 +2,23 @@
   background-color: #2a272a;
   border-radius: 5px;
   padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .title {
   margin: 20px 0;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.answer {
+  text-align: left;
 }
 
 .answer-img {
   width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 .btn {
@@ -19,7 +27,9 @@
   border-radius: 5px;
   color: white;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
   padding: 5px;
+  margin: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

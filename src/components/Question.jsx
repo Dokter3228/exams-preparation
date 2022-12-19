@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Question.css";
-const Question = ({ obj }) => {
+
+const Question = ({ obj, value }) => {
   const [show, isShow] = useState(true);
   return (
     <div className="question-container" key={obj.id}>
@@ -13,7 +14,7 @@ const Question = ({ obj }) => {
             {show ? obj.answer.substring(0, 200) : obj.answer}
           </p>
           <button className="btn" onClick={() => isShow(!show)}>
-            {show ? `больше` : `меньше`}
+            {show ? `раскрыть` : `скрыть`}
           </button>
         </>
       ) : (

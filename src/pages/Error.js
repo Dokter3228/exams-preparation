@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/Error.css";
 const Error = () => {
   return (
-    <>
-      <h2>Ошибка</h2>
-      <Link to="/">СЭУ</Link>
-    </>
+    <div className="error-container">
+      <h2>Страница отсутствует бля</h2>
+      <Link to="/" className="back-link">
+        Обратно к СЭУ
+      </Link>
+    </div>
   );
 };
 

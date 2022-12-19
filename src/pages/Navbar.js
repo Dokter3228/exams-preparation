@@ -7,7 +7,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <NavLink to="/">СЭУ</NavLink>
-        <NavLink to="/thermo">Термодинамика</NavLink>
+        <NavLink to="/thermo">Термуха</NavLink>
+        <NavLink to="/material">Мат</NavLink>
       </div>
     </nav>
   );

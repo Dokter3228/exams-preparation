@@ -7,6 +7,10 @@ main {
   width: 100%;
 }
 
+.answer {
+  text-align: left;
+}
+
 .title {
   margin: 20px 0;
   font-weight: 500;
