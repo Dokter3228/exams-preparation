@@ -4,6 +4,9 @@ import "../styles/Sau.css";
 import { dataSau } from "../dataSau";
 import Question from "../components/Question";
 import MyInput from "../components/MyInput";
+import { Fragment } from "react";
+import ScrollButton from "../components/ScrollButton";
+import { Content, Heading } from "../components/Styles";
 const Home = () => {
   const [data, setData] = useState(dataSau);
   const [value, setValue] = useState("");
@@ -21,27 +24,30 @@ const Home = () => {
     setData(newData);
   }, [valueNum]);
   return (
-    <>
-      <h1 className="title">СЭУ</h1>
-      <div className="input-container">
-        <MyInput
-          value={value}
-          setValue={setValue}
-          placeholder={"по названию"}
-        />
-        <MyInput
-          value={valueNum}
-          setValue={setValueNum}
-          placeholder={"по номеру"}
-        />
-      </div>
+    <Fragment>
+      <>
+        <h1 className="title">СЭУ</h1>
+        <div className="input-container">
+          <MyInput
+            value={value}
+            setValue={setValue}
+            placeholder={"по названию"}
+          />
+          <MyInput
+            value={valueNum}
+            setValue={setValueNum}
+            placeholder={"по номеру"}
+          />
+        </div>
 
-      <main>
-        {data.map((obj) => {
-          return <Question obj={obj} key={obj.id} value={value} />;
-        })}
-      </main>
-    </>
+        <main>
+          {data.map((obj) => {
+            return <Question obj={obj} key={obj.id} value={value} />;
+          })}
+        </main>
+      </>
+      <ScrollButton />
+    </Fragment>
   );
 };
 
