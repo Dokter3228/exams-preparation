@@ -39,10 +39,18 @@ main {
   position: absolute;
   top: 52px;
   right: 5%;
+  z-index: 1;
+}
+
+.btn-sos.active {
+  z-index: -5;
 }
 
 @media only screen and (min-width: 250px) and (max-width: 550px) {
-  .btn {
+  .btn-sos {
+    padding: 5px;
+  }
+  .btn-sos.active {
     padding: 5px;
   }
 }

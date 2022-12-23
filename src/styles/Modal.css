@@ -21,12 +21,75 @@
 .modal__content {
   padding: 20px;
   border-radius: 5px;
-  background-color: white;
-  width: 50vw;
+  background-color: #4b4a54;
+  width: 70vw;
+  height: 50vh;
   transform: scale(0.5);
   transition: 0.4s all;
+  overflow-y: scroll;
+  z-index: 5;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal__content img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 .modal__content.active {
   transform: scale(1);
+  color: white;
+}
+
+.bright-div {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+}
+
+.second-img {
+  margin-top: 10px;
+}
+
+span p {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.columnDivAnother p {
+  margin-top: 10px;
+}
+
+.columnDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+  .modal__content {
+    width: 50%;
+  }
+  .modal__content img {
+    width: 60%;
+  }
+
+  .columnDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    float: right;
+  }
+
+  .bright-div {
+    float: left;
+    width: 50%;
+  }
 }

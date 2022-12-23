@@ -11,6 +11,9 @@ const QuestionThermo = ({ obj }) => {
       {obj.image && (
         <img src={obj.image} alt="thermoanswer" className="answer-img" />
       )}
+      {obj.image2 && (
+        <img src={obj.image2} alt="thermoanswer" className="answer-img" />
+      )}
     </div>
   );
 };

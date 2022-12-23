@@ -54,6 +54,7 @@ p - давление, V - обьем газа, n - кол-во вещества,
 `,
     image:
       "https://sun9-86.userapi.com/impg/LPr16jbqKKtSZ2O1PpkDjspByB7YwLfGI3HRvg/EsfjNj6rjv8.jpg?size=974x730&quality=96&sign=fd34eddc4f78619e952bb95a38c8932b&type=album",
+    image2: `https://cf2.ppt-online.org/files2/slide/r/R58SlmQbpjvzaT4i9wJeu0ZnYNOM1oUh6C3FxyVfq/slide-9.jpg`,
   },
   {
     id: 4,
