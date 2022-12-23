@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div className="holder">
       <h1 className="title">Термодинамика</h1>
-      <Modal active={modalActive} setActive={setModalActive}>
+      {/* <Modal active={modalActive} setActive={setModalActive}>
         <h1>Цикл Отто</h1>
         <div className="columnDiv">
           <img
@@ -121,13 +121,13 @@ const About = () => {
           Удельная теплоемкость вещества –это количество теплоты, необходимое
           для нагревания единицы массы вещества на 1 К: (Дж/кг·К).
         </p>
-      </Modal>
-      <button
+      </Modal> */}
+      {/* <button
         className={modalActive ? "btn-sos active" : "btn-sos"}
         onClick={() => setModalActive(true)}
       >
         SOS
-      </button>
+      </button> */}
       {/* ОСНОВА */}
       {/* <MyInput value={value} setValue={setValue} placeholder={"по номеру"} />
 
@@ -138,81 +138,55 @@ const About = () => {
       </main> */}
       <main>
         <div className="question-container">
-          <h2 className="question">dfasdfas</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            totam voluptas quisquam error ut soluta similique pariatur. Eaque,
-            sit nisi laboriosam est esse asperiores aperiam, architecto amet
-            eius ea at sint quam. Consequuntur est magni alias impedit? Odio
-            tenetur sint iure laborum beatae pariatur iste, perspiciatis velit
-            officia libero mollitia.
+          <h1>Билет 1</h1>
+          <h2 className="question">1. Уравнения состояния идеального газа. </h2>
+          <img
+            className="answer-img"
+            src="https://avatars.mds.yandex.net/get-images-cbir/4055527/8tAY5UivIU6Y-4_3OUX1Ag6922/ocr"
+            alt=""
+          />
+          <h2 className="question">1. Общие сведения и классификация ДВС </h2>
+          <p className="answer">
+            <span>Двигатель внутреннего сгорания (ДВС) - </span> тепловая
+            машина, преобразующая химическую энергию топлива в механическую
+            работу. В поршневом ДВС процесс сгорания топлива проходит в
+            замкнутом объёме (цилиндре), где расширение продуктов сгорания
+            (газов) вызывает поступательное движение поршня, которое
+            преобразуется во вращение коленчатого вала с помощью
+            кривошипно-шатунного механизма.
           </p>
-        </div>
-        <div className="question-container">
-          <h2 className="question">dfasdfas</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            totam voluptas quisquam error ut soluta similique pariatur. Eaque,
-            sit nisi laboriosam est esse asperiores aperiam, architecto amet
-            eius ea at sint quam. Consequuntur est magni alias impedit? Odio
-            tenetur sint iure laborum beatae pariatur iste, perspiciatis velit
-            officia libero mollitia.
-          </p>
-        </div>
-        <div className="question-container">
-          <h2 className="question">dfasdfas</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            totam voluptas quisquam error ut soluta similique pariatur. Eaque,
-            sit nisi laboriosam est esse asperiores aperiam, architecto amet
-            eius ea at sint quam. Consequuntur est magni alias impedit? Odio
-            tenetur sint iure laborum beatae pariatur iste, perspiciatis velit
-            officia libero mollitia.
-          </p>
-        </div>
-        <div className="question-container">
-          <h2 className="question">dfasdfas</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            totam voluptas quisquam error ut soluta similique pariatur. Eaque,
-            sit nisi laboriosam est esse asperiores aperiam, architecto amet
-            eius ea at sint quam. Consequuntur est magni alias impedit? Odio
-            tenetur sint iure laborum beatae pariatur iste, perspiciatis velit
-            officia libero mollitia.
-          </p>
-        </div>
-        <div className="question-container">
-          <h2 className="question">dfasdfas</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            totam voluptas quisquam error ut soluta similique pariatur. Eaque,
-            sit nisi laboriosam est esse asperiores aperiam, architecto amet
-            eius ea at sint quam. Consequuntur est magni alias impedit? Odio
-            tenetur sint iure laborum beatae pariatur iste, perspiciatis velit
-            officia libero mollitia.
-          </p>
-        </div>
-        <div className="question-container">
-          <h2 className="question">dfasdfas</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            totam voluptas quisquam error ut soluta similique pariatur. Eaque,
-            sit nisi laboriosam est esse asperiores aperiam, architecto amet
-            eius ea at sint quam. Consequuntur est magni alias impedit? Odio
-            tenetur sint iure laborum beatae pariatur iste, perspiciatis velit
-            officia libero mollitia.
-          </p>
-        </div>
-        <div className="question-container">
-          <h2 className="question">dfasdfas</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            totam voluptas quisquam error ut soluta similique pariatur. Eaque,
-            sit nisi laboriosam est esse asperiores aperiam, architecto amet
-            eius ea at sint quam. Consequuntur est magni alias impedit? Odio
-            tenetur sint iure laborum beatae pariatur iste, perspiciatis velit
-            officia libero mollitia.
-          </p>
+          <h2>Классификация ДВС</h2>
+          <ol>
+            <li>
+              По топливу
+              <ul>
+                <li>Бензин, дизель, керосин</li>
+                <li>Газ</li>
+              </ul>
+            </li>
+            <li>
+              Тактовый рабочий цикл.
+              <ul>
+                <li>Двухтактные ДВС</li>
+                <li>Четырехтактные ДВС</li>
+              </ul>
+            </li>
+            <li>
+              По типу смесеобразования
+              <ul>
+                <li>
+                  внешнее смесеобразование (карбюраторные или газовые
+                  двигатели). Нужно обратить внимание на то, что карбюраторные
+                  двигатели потребляют легкое жидкое топлив (бензин) и в камеру
+                  сгорания поступает уже готовая смесь паров топлива с воздухом;
+                </li>
+                <li>
+                  внутреннее смесеобразование (бензиновые и дизельные с
+                  непосредственным впрыском топлива)
+                </li>
+              </ul>
+            </li>
+          </ol>
         </div>
       </main>
     </div>
