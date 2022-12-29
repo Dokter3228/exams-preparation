@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
 import "../styles/Sau.css";
-import { dataSau } from "../dataSau";
-import Question from "../components/Question";
-import MyInput from "../components/MyInput";
+
 import { Fragment } from "react";
 import ScrollButton from "../components/ScrollButton";
-import { Content, Heading } from "../components/Styles";
 const Home = () => {
   // const [data, setData] = useState(dataSau);
   // const [value, setValue] = useState("");
@@ -32,19 +28,21 @@ const Home = () => {
           <h2 className="question">Классификация и состав СЭУ</h2>
           <p className="answer">
             <ol>
+              <span>По роду используемого топлива</span>
               <ul>
-                <span>По роду используемого топлива</span>
                 <li>
                   Дизельные, паровые, газотурбинные, ядерные энергоустановки,
-                  комбинрованные
+                  комбинированные
                 </li>
               </ul>
+              <span>По способу передачи</span>
+
               <ul>
-                <span>По способу передачи</span>
                 <li>Механическая, Электрическая, Гидравлическая</li>
               </ul>
+              <span>По степени автоматизации</span>
+
               <ul>
-                <span>По степени автоматизации</span>
                 <li>
                   <span>A1: </span> Полностью автоматизированная, не требует
                   вахты
@@ -90,13 +88,13 @@ const Home = () => {
                 <li>Бензиновые</li>
                 <li>Газовые</li>
               </ul>
-              <span>По способу наполениня илиндра воздухом: </span>
+              <span>По способу наполнения цилиндра воздухом: </span>
 
               <ul>
                 <li>С наддувом</li>
                 <li>Без наддува</li>
               </ul>
-              <span>По способу воспламинения: </span>
+              <span>По способу воспламенения: </span>
 
               <ul>
                 <li>От сжатия(Дизели)</li>
